@@ -1,0 +1,55 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12000\viewh12840\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 database : phpsadar\
+tabel : mahasiswa\
+\
+id int  primary key, auto-increment\
+nama  varchar(100) \
+nim  varchar(10)\
+email  varchar(100)\
+prodi  varchar(100)\
+gambar varchar(100)\
+\
+\
+\
+./mysql -u root -p = until mask ke mysql melalui root\
+password:\
+\
+1. show databases; = menampilkan isi database\
+2. create database nama_database; = membuat database dennen nama nama_database\
+3. use nama_database; = untuk masuk/menggunakan database nama_database\
+4. create table nama_database; = untuk membuat table bernama nama_database\
+\
+contoh:\
+\
+create table mahasiswa ( id int primary key auto_increment, nama varchar(100), nim varchar(8) , email varchar(100), prodi varchar(100), gambar varchar(100) );\
+\
+5. show tables; = until menampilkan isi table\
+6. describe mahasiswa; = until menampilkan structure table mahasiswa\
+7. cara mengisi data ke table =\
+\
+contoh: \
+\
+insert into mahasiswa values (NULL, 'Rifky Alamsyah', '19014351', 'rifky.alamsyah@students.amikom.ac.id', 'Teknik Informatika', 'rifky.jpeg');\
+\
+8. select * from mahasiswa; = untuk melihat data yg sudah kita isi \
+\
+contoh:\
+\
+- select nama, nim from mahasiswa; = menampilkan beberapa data. nama dan nim di dalam table mahasiswa\
+\
+- select * from mahasiswa where nim = '19014351' = unto menampilkan data mahasiswa yg sesuai dengan nim \'9219014351\'92\
+\
+9. update mahasiswa set prodi = 'Informatika' where id = 2; = mengubah/mengedit data pada id ke 2 menjadi \'91informatics\'92\
+\
+10 delete from mahasiswa where id = 3; = until menghapus data pada table mahasiswa \
+yg id-nya 3 \
+\
+11. drop table mahasiswa; = until menghapus table mahasiswa\
+\
+12. drop database phpdasar; = until menghapus database phpdasar}
